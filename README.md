@@ -5,17 +5,15 @@ VK SDK for React Native
 ## Installation
 
 ```sh
-npm install vk-sdk-react-native
+yarn add vk-sdk-react-native
 ```
 
 ## Usage
 
 ```js
-import VkSdkReactNative from "vk-sdk-react-native";
+import VkSdk from 'vk-sdk-react-native';
 
-// ...
-
-const result = await VkSdkReactNative.multiply(3, 7);
+// TODO: README
 ```
 
 ## Contributing

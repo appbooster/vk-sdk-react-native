@@ -29,7 +29,14 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "bootstrap": "yarn example && yarn && yarn pods",
+    "clear-root": "rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-* && rm -rf node_modules/ && yarn cache clean && rm -rf lib/",
+    "clear-example": "cd example && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-* && rm -rf node_modules/ && yarn cache clean && cd ios && rm -rf Pods && rm -rf build && cd .. && cd android && rm -rf build && cd .. && cd ..",
+    "clear-android-cache": "cd example/android && bash gradlew clean && bash gradlew cleanBuildCache && cd ..",
+    "clear": "yarn clear-root && yarn clear-example",
+    "reset": "yarn clear-root && yarn clear-example && yarn bootstrap && yarn clear-android-cache",
+    "clear-pods": "cd example && cd ios && pod cache clean --all && cd .. && cd ..",
+    "update-pods": "cd example && cd ios && pod install --repo-update && cd .. && cd .."
   },
   "keywords": [
     "react-native",

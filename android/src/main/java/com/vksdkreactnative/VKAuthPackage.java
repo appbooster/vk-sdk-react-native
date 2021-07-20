@@ -11,12 +11,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class VkSdkReactNativePackage implements ReactPackage {
+public class VKAuthPackage implements ReactPackage {
     @NonNull
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new VkSdkReactNativeModule(reactContext));
+        modules.add(new VKAuthModule(reactContext));
+        modules.add(new VKShareModule(reactContext));
         return modules;
     }
 
