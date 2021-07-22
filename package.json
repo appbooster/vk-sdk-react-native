@@ -1,6 +1,6 @@
 {
   "name": "vk-sdk-react-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "VK SDK for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

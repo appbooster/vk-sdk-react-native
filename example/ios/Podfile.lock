@@ -246,7 +246,7 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - VK-ios-sdk (1.6.2)
-  - vk-sdk-react-native (0.1.0):
+  - vk-sdk-react-native (0.1.1):
     - React-Core
     - VK-ios-sdk
   - Yoga (1.14.0)
@@ -371,7 +371,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   VK-ios-sdk: 5bcf00a2014a7323f98db9328b603d4f96635caa
-  vk-sdk-react-native: d4aff0b188b4d5fd384559b1937e1394888f134a
+  vk-sdk-react-native: cf71688419a2c6b14a39fec753d766c264e3d9b5
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
 PODFILE CHECKSUM: 1707e851ba8533e6845a6a6fdad57499ada087c1
